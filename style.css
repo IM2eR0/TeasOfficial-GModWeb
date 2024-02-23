@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#app {
+    margin: 0 auto;
+    margin-top: 6.4rem;
+    margin-bottom: 6.4rem;
+    width: 80%;
+}
+
+.button-large {
+    font-size: 1.4rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding: 0 2rem;
+}
+
+.copyright{
+    padding: 1rem 1.5rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
+    border-left: 0.3rem solid #d1d1d1;
+    border-right: 0.3rem solid #d1d1d1;
+    font-size: 1.5rem;
+}
+
+.tabbar{
+    margin: 0;
+    padding: 0;
+}
+
+.tabbar ul {
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 0.1rem 0.5rem rgb(142, 142, 142);
+}
+ 
+.tabbar li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+ 
+.tabbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+}
+/*鼠标移动到选项上修改背景颜色 */
+.tabbar li a:hover {
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+#beian{
+    font-size: 1.2rem;
+}
+
+table img{
+    border-radius: 50%;
+}
+
+[tooltip]{
+    position: relative;
+}
+[tooltip]::after{
+    display: none;
+    content: attr(tooltip);
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px 15px;
+    /*max-width: 200px;*/
+    border-radius: 4px;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    color: #fff;
+    background-color: #313131A0;
+    bottom: calc(-100% - 3rem);
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+[tooltip]::before{
+    display: none;
+    content: '';
+    position: absolute;
+    border: 5px solid transparent;
+    z-index: 100;
+    border-bottom-color: #313131A0;
+    bottom: calc(100% - 2.5rem);
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+[tooltip]:hover::after{
+    display: block;
+}
+[tooltip]:hover::before{
+    display: block;
+}
+
+.serverquery{
+    width: auto;
+    margin: 5rem;
+    padding: 0;
+}
+.serverquery p{
+    margin-bottom: 0;
+}
+.serverquery h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0 !important;
+}
